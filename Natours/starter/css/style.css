@@ -7,16 +7,23 @@ Dark green: #28b485
 
 */
 
-* {
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    
+    box-sizing: inherit;
+    /* instead of making border-box global
+    make it inheritable, to make it easier to change.  */
 }
 
 html {
     /* changes the default browser font size
     to make converting px to rem easier math wise */
-    font-size: 10px;
+    font-size: 62.5%;
+    /* divide the fontsize you want by 16
+    in this case 10/15 = 62.5 */
 }
 
 body {
@@ -26,6 +33,8 @@ body {
     line-height: 1.7;
     color: #777;
     padding: 3rem;
+
+    box-sizing: border-box;
 }
 
 .header {
