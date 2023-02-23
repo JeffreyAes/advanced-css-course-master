@@ -23,7 +23,7 @@ html {
     to make converting px to rem easier math wise */
     font-size: 62.5%;
     /* divide the fontsize you want by 16
-    in this case 10/15 = 62.5 */
+    in this case 10/16 = 62.5 */
 }
 
 body {
