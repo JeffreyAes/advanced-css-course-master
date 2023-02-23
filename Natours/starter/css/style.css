@@ -32,6 +32,9 @@ body {
     background-position: top;
     position: relative;
 
+    /* cuts the dimensions of the element:
+    they are vectors of the element, ordered clockwise */
+
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
@@ -73,6 +76,7 @@ body {
     font-weight: 400;
     letter-spacing: 35px;
 
+    /* calling the keyframe animations and its properties */
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
@@ -144,6 +148,7 @@ body {
     padding: 15px 40px;
     display: inline-block;
     border-radius: 100px;
+    /* transition goes on the element, not the hover property  */
     transition: all .2s;
     position: relative;
 
@@ -175,6 +180,8 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
+    /* since theres a hover as a child of this after:
+    transition goes here because it's technically the parent... */
     transition: all .4s;
 
 }
@@ -191,6 +198,8 @@ body {
 
 .btn-animated {
     animation: moveInBottom .5s ease-out .75s;
+    /* fill-mode: backwards:
+    applies the animation styling at 0% before the delay */
     animation-fill-mode: backwards;
 
 }
