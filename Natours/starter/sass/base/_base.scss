@@ -1,0 +1,22 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: inherit;
+    /* instead of making border-box global
+    make it inheritable, to make it easier to change.  */
+}
+
+html {
+    /* changes the default browser font size
+    to make converting px to rem easier math wise */
+    font-size: 62.5%;
+    /* divide the fontsize you want by 16
+    in this case 10/16 = 62.5 */
+}
+
+body {
+    box-sizing: border-box;
+}
