@@ -14,7 +14,10 @@
   "author": "Jeffrey",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "concat": "^1.0.3",
     "node-sass": "^8.0.0",
-    "npm-run-all": "^4.1.5"
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^10.1.0"
   }
 }
